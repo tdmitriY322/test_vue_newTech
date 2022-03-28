@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Start from '@/views/Start'
+import MainPage from '@/views/MainPage'
 
 
 Vue.use(VueRouter)
@@ -11,24 +11,8 @@ const routes = [{
     meta: {
       layout: 'main'
     },
-    component: Start
+    component: MainPage
   },
-  {
-    path: '/auth',
-    name: 'Authorization',
-    meta: {
-      layout: 'main'
-    },
-    component: () => import('@/views/Auth.vue')
-  },
-  {
-    path: '/main',
-    name: 'Main',
-    meta: {
-      layout: 'main'
-    },
-    component: () => import('@/views/MainPage.vue')
-  }
 ]
 
 const router = new VueRouter({

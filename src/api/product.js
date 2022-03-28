@@ -24,5 +24,9 @@ export default {
         )
     },
 
+    postCategory(value) {
+        return this.execute('post', 'v3/category/attribute', value);
+    },
+    
 
 };
